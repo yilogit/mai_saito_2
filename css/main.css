@@ -1,0 +1,19 @@
+/* 使用图片填充背景 */
+body {
+    background-image: url('../images/bg/endsky.png'); /* 图片路径 */
+    background-size: cover;                /* 核心：自动拉伸铺满，不留白 */
+    background-position: center;           /* 图片居中显示 */
+    background-attachment: fixed;          /* 核心：背景固定，不随滚动条滚动 */
+    background-repeat: no-repeat;          /* 不重复铺贴 */
+}
+
+
+
+/* 调整音乐播放器 */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* 给全站背景蒙上一层 30% 的黑纱 */
+    z-index: -1; /* 确保它在背景图之上，但在内容之下 */
+}
