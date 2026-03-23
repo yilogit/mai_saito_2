@@ -17,3 +17,72 @@ body::before {
     background: rgba(0, 0, 0, 0.3); /* 给全站背景蒙上一层 30% 的黑纱 */
     z-index: -1; /* 确保它在背景图之上，但在内容之下 */
 }
+
+
+
+
+/* 整个时钟容器居中 */
+#clock-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 绝对居中的黑科技 */
+    text-align: center;
+    color: white;
+    padding: 40px 60px;
+    background: rgba(0, 0, 0, 0.4);   /* 深色遮罩，无惧亮色背景 */
+    border-radius: 20px;
+    backdrop-filter: blur(15px);      /* 强力毛玻璃，增加高级感 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); /* 深色阴影增强对比 */
+    z-index: 100;
+    pointer-events: none;             /* 鼠标可以穿透，不影响点击背景 */
+}
+
+/* 时间大字 */
+#time {
+    font-size: 80px;                  /* 足够大的字号 */
+    font-weight: bold;
+    letter-spacing: 5px;              /* 字间距 */
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+/* 日期小字 */
+#date {
+    font-size: 20px;
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 倒计时样式 */
+#jlpt-countdown {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* 增加分割线 */
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.jlpt-label {
+    opacity: 0.7;
+    margin-right: 10px;
+}
+
+#days-left {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffeb3b; /* 使用明亮的黄色，突出剩余天数 */
+    text-shadow: 0 0 10px rgba(255, 235, 59, 0.5);
+}
