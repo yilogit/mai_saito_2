@@ -1,3 +1,16 @@
+// 在 weather.js 开头定义几个你常住的城市
+const cityTranslation = {
+    "Hangzhou": "杭州",
+    "Shanghai": "上海",
+    "Beijing": "北京",
+    "Tokyo": "东京",
+    "Minato City": "港区"
+};
+
+
+
+
+
 // 天气代码转换表（根据 WMO 标准）
 const weatherCodeMap = {
     0: "晴朗",
