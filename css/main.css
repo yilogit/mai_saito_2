@@ -97,3 +97,16 @@ body::before {
     color: #ffeb3b; /* 使用明亮的黄色，突出剩余天数 */
     text-shadow: 0 0 10px rgba(255, 235, 59, 0.5);
 }
+
+
+
+
+
+
+#weather-section {
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8); /* 增强文字识别度 */
+}
+
+#current-temp {
+    color: #81d4fa; /* 给天气一个舒服的浅蓝色 */
+}
