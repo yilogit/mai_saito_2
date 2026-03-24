@@ -29,7 +29,18 @@ body::before {
     transform: translate(-50%, -50%); /* 绝对居中的黑科技 */
     text-align: center;
     color: white;
-    padding: 40px 60px;
+
+
+
+/* --- 核心修改：让宽度自适应 --- */
+    width: 85%;            /* 默认占据屏幕 85% 的宽度，自动留出左右各 7.5% 的空隙 */
+    max-width: 500px;      /* 在大屏幕上最大不超过 500px，防止太扁 */
+    padding: 40px 6px;    /* 缩小内边距，给文字留更多空间 */
+
+
+
+
+
     background: rgba(0, 0, 0, 0.4);   /* 深色遮罩，无惧亮色背景 */
     border-radius: 20px;
     backdrop-filter: blur(15px);      /* 强力毛玻璃，增加高级感 */
