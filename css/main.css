@@ -110,3 +110,16 @@ body::before {
 #current-temp {
     color: #81d4fa; /* 给天气一个舒服的浅蓝色 */
 }
+
+
+
+/* 确保 APlayer 及其播放列表永远在最上层 */
+.aplayer {
+    z-index: 999 !important; /* 999 远大于时钟的 100 */
+}
+
+/* 针对 APlayer 展开后的列表容器进行强化 */
+.aplayer .aplayer-list {
+    z-index: 1000 !important;
+}
+
