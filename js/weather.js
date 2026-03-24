@@ -3,6 +3,7 @@ const cityTranslation = {
     "Hangzhou": "杭州",
     "Shanghai": "上海",
     "Beijing": "北京",
+    "Shibuya City":"涩谷"
     "Tokyo": "东京",
     "Minato City": "港区",
     "Minato": "港区"
